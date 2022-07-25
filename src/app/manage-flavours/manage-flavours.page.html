@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-button fill="clear" style="float: left;" (click)='relocate()'><img src="assets/iconBack.svg"></ion-button>
+        <ion-title text-center>Manage Flavours</ion-title>
+      <ion-button fill="clear" style="float: right;"><img src="assets/iconScan.svg"></ion-button>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form class="manageFlav">
+      <div class="ion-inputs">
+        <ion-item>
+          <ion-label position="fixed">Barcode</ion-label>
+          <ion-input type="text" [(ngModel)]="barcode" name="barcode" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Flavour Name</ion-label>
+          <ion-input type="text" [(ngModel)]="flavName" name="flavName"></ion-input>
+        </ion-item>
+      <ion-row>
+        <ion-item>
+          <ion-label position="fixed">Price per box</ion-label>
+          <ion-input type="text" [(ngModel)]="pricePBox" name="pricePBox"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Price per pod</ion-label>
+          <ion-input type="number" [(ngModel)]="podsPP" name="podsPP"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-item>
+        <ion-label position="fixed">Pods per box</ion-label>
+        <ion-input type="number" [(ngModel)]="podsPBox" name="podsPBox"></ion-input>
+      </ion-item>
+      </div>
+    </form>
+</ion-content>
+
+<ion-footer>
+  <ion-content>
+      <ion-button (click)="logoutUser()" id="logoutBtn">
+          Logout
+      </ion-button>
+  </ion-content>
+</ion-footer>
+
+  
+

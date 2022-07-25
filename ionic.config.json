@@ -1,0 +1,7 @@
+{
+  "name": "CoffeeStockApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
