@@ -9,4 +9,5 @@ $ cd ../path/to/the/file
 $ npm install
 $ ng serve (to run project)
 $ npm run 
+$ VERY IMPORTANT - Remember to open app in mobile mode via inspect on any web browser
 ```
